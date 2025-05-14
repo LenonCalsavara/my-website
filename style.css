@@ -1,0 +1,89 @@
+body {
+    background-color: hsl(154 50% 5%);
+    background-image: radial-gradient(hsl(154 5% 15%) 0%, hsl(154 50% 5%) 70%);
+    color: #faff70;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    overflow: hidden;
+}
+
+a {
+    color: #faff70;
+    text-decoration: none;
+}
+
+#glare {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* ensure the effect doesn't cover the text */
+    background: radial-gradient(hsl(154 5% 15%) 0%, hsl(154 50% 5%) 70%);
+}
+
+#terminal {
+    position: relative;
+    height: 100vh;
+    padding: 2rem;
+    box-sizing: border-box;
+    z-index: 2;
+    text-shadow: 0 0 5px #faff70;
+}
+
+input {
+    background: transparent;
+    border: none;
+    color: #faff70;
+    font-family: inherit;
+    font-size: 12px;
+    outline: none;
+    width: 90%;
+    text-shadow: 0 0 5px #faff70;
+}
+
+#prompt {
+    display: inline;
+    font-size: 12px;
+    text-shadow: 0 0 5px #faff70;
+}
+
+#output {
+    white-space: pre-wrap;
+    margin-bottom: 0.5rem;
+}
+
+.intro-art {
+    width: 100%;
+    max-height: 200px;
+    margin-bottom: 1rem;
+}
+
+#glare {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* ensure the effect doesn't cover the text */
+    background: radial-gradient(hsl(154 5% 15%) 0%, hsl(154 50% 5%) 70%);
+}
+
+@keyframes lines {
+    0% {background-position: 0 0}
+    50% {background-position: 0 0}
+    51% {background-position: 0 2px}
+    100% {background-position: 0 2px}
+}
+
+#interlaced {
+    position: fixed;
+    background: repeating-linear-gradient(transparent 0px 1px, hsl(154 0% 0%/.3) 3px 4px);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    pointer-events: none;
+    animation: lines .08s linear infinite;
+}
