@@ -87,3 +87,8 @@ input {
     pointer-events: none;
     animation: lines .08s linear infinite;
 }
+
+#asciiText {
+    white-space: pre-wrap;
+    display: none;
+}
