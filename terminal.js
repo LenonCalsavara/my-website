@@ -112,7 +112,7 @@ window.onload = () => {
 
 input.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
-        const command = input.value.trim();
+        const command = input.value.trim().toLowerCase();
         output.innerText += `\n> ${command}\n`;
         if (command === '') {
 
