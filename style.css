@@ -40,17 +40,29 @@ input {
     outline: none;
     width: 90%;
     text-shadow: 0 0 5px #faff70;
+
+    @media (max-width: 768px) {
+        font-size: 8px;
+    }
 }
 
 #prompt {
     display: inline;
     font-size: 12px;
     text-shadow: 0 0 5px #faff70;
+
+    @media (max-width: 768px) {
+        font-size: 8px;
+    }
 }
 
 #output {
-    white-space: pre-wrap;
     margin-bottom: 0.5rem;
+    font-size: 12px;
+
+    @media (max-width: 768px) {
+        font-size: 8px;
+    }
 }
 
 .intro-art {
@@ -89,6 +101,5 @@ input {
 }
 
 #asciiText {
-    white-space: pre-wrap;
     display: none;
 }
