@@ -7,7 +7,7 @@ const cvData = {
         "location": "Maringá, Paraná, Brazil",
         "email": "lenoncsilva@gmail.com",
         "phone": "+55 44 9 9985-2746",
-        "linkedin": "linkedin.com/in/lenon-calsavara-silva"
+        "linkedin": "linkedin.com/in/lenon-calsavara-silva-b04905a0"
     },
     "sections": [
         {
@@ -160,7 +160,7 @@ const commands = {
     contacts: () => {
         const content = `Contacts:
 - [Email]: lenoncsilva@gmail.com
-- [LinkedIn]: https://www.linkedin.com/in/lenon-calsavara-silva
+- [LinkedIn]: https://www.linkedin.com/in/lenon-calsavara-silva-b04905a0
 - [GitHub]: https://github.com/LenonCalsavara`
 
         writeText(output, content, 1);
