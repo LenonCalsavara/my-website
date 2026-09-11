@@ -4,40 +4,54 @@ const input = document.getElementById("input");
 const cvData = {
     "personal_info": {
         "name": "Lenon Calsavara Silva",
+        "role": "Senior Full Stack Engineer | Technical Lead | DevSecOps",
         "location": "Maringá, Paraná, Brazil",
         "email": "lenoncsilva@gmail.com",
         "phone": "+55 44 9 9985-2746",
-        "linkedin": "linkedin.com/in/lenon-calsavara-silva-b04905a0"
+        "linkedin": "linkedin.com/in/lenon-calsavara-silva-b04905a0",
+        "website": "lenoncalsavara.com"
     },
     "sections": [
         {
             "title": "Summary",
-            "content": "Results-driven Full Stack Engineer and Technical Lead with nearly 10 years of experience architecting, developing, and scaling robust software applications. Deep expertise in PHP (Laravel) and modern JavaScript ecosystems (React, Next.js), backed by strong capabilities in cloud infrastructure (Docker, Serverless, Azure) and CI/CD pipelines. Recently focused on engineering complex SaaS platforms utilizing Generative AI for intelligent document automation in the highly regulated pharmaceutical sector. Proven track record of leading cross-functional teams, modernizing legacy systems, and leveraging AI-augmented methodologies to accelerate the delivery of secure, high-performance software solutions."
+            "content": "Senior Full Stack and DevSecOps Engineer with 10+ years of experience in software development, application architecture, technical leadership, and infrastructure automation. Specialized in PHP/Laravel and JavaScript ecosystems with React, Next.js, and Node.js. Recent work includes building SAST/DAST security pipelines and developing complex SaaS platforms that use Generative AI for document automation in regulated pharmaceutical and clinical research workflows."
         },
         {
             "title": "Skills",
             "items": [
-                "Languages: PHP, JavaScript",
-                "Frameworks: Laravel, React, Next.js, Serverless",
-                "Databases: Microsoft SQL Server, MySQL, PostgreSQL, Redis, MongoDB"
+                "Languages: PHP, JavaScript, TypeScript",
+                "Backend: Laravel, Node.js, REST APIs, microservices, asynchronous processing",
+                "Frontend: React, Next.js, Vue.js, Storybook, TanStack Query",
+                "AppSec: SAST, DAST, Nuclei, OpenGrep, Horusec, vulnerability triage",
+                "DevOps and IaC: Ansible, Docker, CI/CD, GitHub, GitLab, Bitbucket, Gitea, Azure DevOps",
+                "Cloud and data: AWS, Azure, PostgreSQL, MySQL, SQL Server, Redis, MongoDB"
             ]
         },
         {
             "title": "Experience",
             "items": [
                 {
+                    "position": "Senior DevSecOps Engineer",
+                    "company": "BSD Trust - FreeBSD Brasil",
+                    "period": "July 2026 – Present",
+                    "location": "Maringá, Paraná, Brazil",
+                    "highlights": [
+                        "Develop and enhance an application security platform that automates SAST and DAST using Nuclei, OpenGrep, Horusec, and other specialized scanners.",
+                        "Design and maintain security pipelines for Gitea, GitHub, GitLab, Azure DevOps, and Bitbucket.",
+                        "Triage and qualify security findings, assess risk, and refine SAST rules to reduce false positives and improve vulnerability relevance.",
+                        "Automate infrastructure provisioning and configuration through Infrastructure as Code using Ansible and Docker."
+                    ]
+                },
+                {
                     "position": "Full Stack Engineer (Contract)",
                     "company": "Logika Solutions",
                     "period": "December 2025 – Present",
                     "location": "Maringá, Paraná, Brazil (Remote)",
                     "highlights": [
-                        "Developed a complex platform for the pharmaceutical and clinical research sector, focusing on intelligent document automation and compliance workflow optimization using generative AI.",
-                        "Architected AI-driven features for semantic analysis, data extraction, and intelligent version comparison of extensive documents.",
-                        "Built scalable backend RESTful APIs with Laravel, heavily utilizing asynchronous processing and Queues/Jobs for batch document processing.",
-                        "Created dynamic, high-performance frontend interfaces using React, Hooks, Styled Components, and Tanstack Query.",
-                        "Managed infrastructure using Docker for environment standardization and integrated cloud storage with Azure Blob Storage.",
-                        "Implemented secure SaaS authentication via Auth0 and Role-Based Access Control (RBAC).",
-                        "Leveraged AI-augmented development methodologies to accelerate system architecture, code refactoring, and unit testing workflows."
+                        "Designed a Generative AI semantic analysis engine to compare extensive pharmaceutical documents, reducing manual review time in regulatory compliance workflows.",
+                        "Built asynchronous batch processing with Laravel Jobs/Queues, supporting thousands of pages per hour without performance degradation.",
+                        "Created high-performance interfaces with React, Hooks, Styled Components, and TanStack Query.",
+                        "Implemented multi-tenant authentication with Auth0 and granular RBAC and integrated Azure Blob Storage."
                     ]
                 },
                 {
@@ -46,17 +60,21 @@ const cvData = {
                     "period": "October 2023 – December 2025",
                     "location": "Campinas, São Paulo, Brazil",
                     "highlights": [
-                        "Led a development team, designed solutions, conducted code reviews, automated deployments, refactored legacy PHP code. Developed new services in Laravel, assisted in database restructuring, configured CloudFlare for applications, and set up/configured servers (Bare Metal)."
+                        "Re-architected a legacy CRM marketplace, optimizing its data architecture and reducing request response times by 30%.",
+                        "Implemented microservices and dynamic queues, enabling the platform to process three times the previous data volume.",
+                        "Mitigated DDoS attacks and critical vulnerabilities, contributing to 99.9% availability.",
+                        "Standardized environments with Docker and automated CI/CD pipelines, reducing deployments from minutes to seconds."
                     ]
                 },
                 {
                     "position": "Systems Analyst / Technical Specialist",
-                    "company": "CIT",
+                    "company": "CI&T",
                     "period": "July 2021 – October 2023",
                     "location": "Campinas, São Paulo, Brazil",
                     "highlights": [
-                        "Developed new features, reviewed code, mentored, and worked on solutions for a major US pharmaceutical client using Drupal 7, 9, and React.",
-                        "Integrated Salesforce, worked with Jenkins on Acquia, and used Serverless Framework, Next.js, React, and StoryBook."
+                        "Led feature development and technical reviews for a major US pharmaceutical company's multilingual website using Drupal 7/9 and React.",
+                        "Architected solutions with Node.js, Serverless Framework, and Next.js.",
+                        "Automated marketing data flows by integrating Acquia CMS with Salesforce and optimized publishing through Jenkins CI/CD."
                     ]
                 },
                 {
@@ -65,8 +83,8 @@ const cvData = {
                     "period": "September 2020 – July 2021",
                     "location": "Maringá, Paraná, Brazil",
                     "highlights": [
-                        "Developed and maintained a legacy subdivision system in pure PHP, reducing project costs by migrating documents to Amazon S3.",
-                        "Participated in the development of a new real estate portal using Laravel, microservices, JWT, and VueJS with Vuex on the frontend."
+                        "Consolidated multiple instances of a legacy land-development system into a single PHP architecture, reducing Amazon EC2 costs.",
+                        "Migrated documents from EC2 to Amazon S3 and developed a real estate portal with Laravel, JWT, and Vue.js/Vuex."
                     ]
                 },
                 {
@@ -85,7 +103,7 @@ const cvData = {
                     "period": "January 2018 – September 2019",
                     "location": "Maringá, Paraná, Brazil",
                     "highlights": [
-                        "Developed institutional websites and landing pages using Wordpress for clients in the construction and healthcare sectors."
+                        "Developed WordPress websites and landing pages for clients in the construction and healthcare sectors."
                     ]
                 },
                 {
@@ -94,7 +112,7 @@ const cvData = {
                     "period": "February 2016 – January 2018",
                     "location": "Maringá, Paraná, Brazil",
                     "highlights": [
-                        "Gained experience with Laravel in backend and frontend development, using JQuery and Bootstrap."
+                        "Developed backend and frontend applications with Laravel, jQuery, and Bootstrap."
                     ]
                 }
             ]
@@ -105,16 +123,8 @@ const cvData = {
                 {
                     "degree": "Systems Analysis and Development",
                     "institution": "Centro Universitário UniFatecie",
-                    "period": "June 2022 – June 2024"
+                    "period": "June 2022 – January 2025"
                 }
-            ]
-        },
-        {
-            "title": "Certifications",
-            "items": [
-                "Serverless with Node.js: Efficient Cloud Applications",
-                "Next.JS: Full Stack with Lambdas",
-                "Laravel: Transactions, Service Container, and Authentication"
             ]
         },
         {
@@ -161,7 +171,8 @@ const commands = {
         const content = `Contacts:
 - [Email]: lenoncsilva@gmail.com
 - [LinkedIn]: https://www.linkedin.com/in/lenon-calsavara-silva-b04905a0
-- [GitHub]: https://github.com/LenonCalsavara`
+- [GitHub]: https://github.com/LenonCalsavara
+- [Website]: https://lenoncalsavara.com`
 
         writeText(output, content, 1);
     },
@@ -174,9 +185,11 @@ const commands = {
 
         // Exibe informações pessoais
         await writeText(output, `\n${cvData.personal_info.name}\n`, 1);
+        await writeText(output, `${cvData.personal_info.role}\n`, 1);
         await writeText(output, `Location: ${cvData.personal_info.location}\n`, 1);
         await writeText(output, `Email: ${cvData.personal_info.email}\n`, 1);
-        await writeText(output, `LinkedIn: ${cvData.personal_info.linkedin}\n\n`, 1);
+        await writeText(output, `LinkedIn: ${cvData.personal_info.linkedin}\n`, 1);
+        await writeText(output, `Website: ${cvData.personal_info.website}\n\n`, 1);
 
         // Percorre todas as seções
         for (const section of cvData.sections) {
